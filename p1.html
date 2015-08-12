@@ -8,6 +8,8 @@
     <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
 <body>
 
@@ -39,17 +41,17 @@
             <article>
                 <section class="row text-center">
                     <section class="col-xs-12 col-sm-6 col-md-4">
-                        <img src="http://lorempixel.com/600/400/animals" class="img-responsive" alt="Appify Image">
+                        <img src="http://lorempixel.com/600/400/animals" class="img-responsive" alt="Appify Image" data-toggle="modal" data-target="#project1">
                         <h3>APPIFY</h3>
                         <a href="https://github.com/udacity/Appify/">https://github.com/udacity/Appify/</a>
                     </section>
                     <section class="col-xs-12 col-sm-6 col-md-4">
-                        <img src="http://lorempixel.com/600/400/animals/5" class="img-responsive xs-pad" alt="Sunflower Image">
+                        <img src="http://lorempixel.com/600/400/animals/5" class="img-responsive xs-pad" alt="Sunflower Image" data-toggle="modal" data-target="#project2">
                         <h3>SUNFLOWER</h3>
                         <a href="https://github.com/udacity/Sunflower/">https://github.com/udacity/Sunflower/</a>
                     </section>
                     <section class="col-xs-12 col-sm-6 col-md-4">
-                        <img src="http://lorempixel.com/600/400/animals/10" class="img-responsive sm-pad xs-pad" alt="Bokeh Image">
+                        <img src="http://lorempixel.com/600/400/animals/10" class="img-responsive sm-pad xs-pad" alt="Bokeh Image" data-toggle="modal" data-target="#project3">
                         <h3>BOKEH</h3>
                         <a href="https://github.com/udacity/Bokeh/">https://github.com/udacity/Bokeh/</a>
                     </section>
@@ -57,5 +59,61 @@
             </article>
         </main>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Appify</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="images/20120827_161708.jpg">
+            Project 1.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Sunflower</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="images/IMG_0496.JPG">
+            I wish this was a puppy. 
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Bokeh</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="images/IMG_1067.JPG">
+            I don't know what Bokeh means. I would rather have a puppy. 
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
 </body>
 </html>
